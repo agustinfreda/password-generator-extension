@@ -1,0 +1,120 @@
+.container {
+    width: 300px;
+    margin: 20px auto;
+    padding: 20px;
+    background: linear-gradient(135deg, #002A40, #00547F);
+    border: 2px solid #999;
+    border-radius: 20px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    position: relative;
+    overflow: hidden;
+}
+  
+.container:before {
+    content: '';
+    position: absolute;
+    top: -20px;
+    left: -20px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at 20% 50%, transparent, transparent); /* Cambiamos el color a transparente */
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+  
+.container:after {
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    right: -20px;
+    width: 80px;
+    height: 80px;
+    background: radial-gradient(circle at 80% 50%, transparent, transparent); /* Cambiamos el color a transparente */
+    border-radius: 50%;
+    transform: rotate(45deg);
+}
+
+#generateBtn {
+    width: 100px;
+    height: 100px;
+    font-size: 36px;
+    line-height: 100px;
+    background-color: #04537a;
+    font-weight: bold;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 4px 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+}
+  
+#output {
+    margin-top: 20px;
+    font-size: 18px;
+    color: #fff;
+}
+  
+#copyBtn {
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 16px;
+    background-color: #06618f;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    display: inline-block;
+    margin-left: auto;
+    margin-right: auto;
+}
+  
+#copyBtn.copiado {
+    background-color: #28a745;
+    font-weight: bold;
+    color: #ffffff;
+}
+
+.key-btn {
+    width: 60px;
+    height: 60px;
+    background-color: #ffffff;
+    border: 2px solid #ccc;
+    border-radius: 50%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.lock-icon {
+    font-size: 24px;
+}
+  
+.key-btn:before, .key-btn:after {
+    content: '';
+    position: absolute;
+    background-color: #ccc; /* Color del borde */
+}
+  
+#generateBtn:hover,
+#copyBtn:hover {
+  background-color: #05273a; /* Cambio de color al pasar el cursor */
+  transform: translateY(-2px); /* Efecto de elevación */
+}
+
+/* 
+
+.container {
+    width: 290px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+} */
