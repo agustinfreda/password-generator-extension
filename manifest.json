@@ -1,0 +1,12 @@
+{
+	"manifest_version": 3,
+	"name": "Password Generator!",
+	"version": "1.0",
+	"description": "Easily create strong and secure passwords with the Random Password Generator extension, developed by Freda Agustin!",
+	"icons": {
+		"256": "icon.png"
+	},
+	"action": {
+		"default_popup": "popup.html"
+	}
+}
